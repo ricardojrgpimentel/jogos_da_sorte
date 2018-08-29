@@ -1,8 +1,3 @@
-# jogos_da_sorte_flutter
+# Jogos da Sorte
 
-A new Flutter project.
-
-## Getting Started
-
-For help getting started with Flutter, view our online
-[documentation](https://flutter.io/).
+Aplicação em flutter
