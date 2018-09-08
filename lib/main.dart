@@ -1,19 +1,22 @@
 import 'package:flutter/material.dart';
+import 'section.dart';
 
-Widget contentBody() {
-  return Container(
-    color: Colors.green[700],
-  );
-}
+void main() => runApp(MyApp());
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Scaffold(
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Jogos da Sorte',
+      home: Scaffold(
         appBar: AppBar(
           title: Text('Jogos da Sorte'),
-          backgroundColor: Colors.greenAccent,
+          backgroundColor: Colors.green[700],
         ),
-        body: contentBody()),
-  ));
+        body: Center(
+          child: Section(),
+        ),
+      ),
+    );
+  }
 }
