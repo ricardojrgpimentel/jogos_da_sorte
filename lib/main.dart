@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'section.dart';
+import 'cards/euromilhoes.dart';
 
 void main() => runApp(MyApp());
 
@@ -9,14 +9,21 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Jogos da Sorte',
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Jogos da Sorte'),
-          backgroundColor: Colors.green[700],
-        ),
-        body: Center(
-          child: Section(),
-        ),
-      ),
+          appBar: AppBar(
+            title: Text('Jogos da Sorte'),
+            backgroundColor: Colors.green[700],
+          ),
+          body: new ListView(shrinkWrap: true, children: <Widget>[
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+            EuromilhoesCard(),
+          ])),
     );
   }
 }
