@@ -3,8 +3,6 @@ import 'cards/euromilhoes.dart';
 import 'cards/milhao.dart';
 import 'cards/classica.dart';
 import 'cards/popular.dart';
-import 'cards/classica.dart';
-import 'cards/popular.dart';
 import 'cards/totoloto.dart';
 import 'cards/totobola.dart';
 
