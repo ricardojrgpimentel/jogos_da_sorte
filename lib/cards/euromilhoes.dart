@@ -33,32 +33,37 @@ class EuromilhoesCard extends StatelessWidget {
       ),
       new Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
         new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye, size: 40.0),
-          new Positioned(top: 10.0, left: 20.0, child: new Text('1'))
+          new Icon(Icons.panorama_fish_eye,
+              size: 40.0, color: Colors.blueGrey[100]),
+          new Positioned(top: 12.0, left: 16.0, child: new Text('1'))
         ]),
         new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye, size: 40.0),
-          new Positioned(top: 10.0, right: 20.0, child: new Text('1'))
+          new Icon(Icons.panorama_fish_eye,
+              size: 40.0, color: Colors.blueGrey[100]),
+          new Positioned(top: 12.0, left: 16.0, child: new Text('1'))
         ]),
         new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye, size: 40.0),
-          new Positioned(top: 10.0, right: 20.0, child: new Text('1'))
+          new Icon(Icons.panorama_fish_eye,
+              size: 40.0, color: Colors.blueGrey[100]),
+          new Positioned(top: 12.0, left: 16.0, child: new Text('1'))
         ]),
         new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye, size: 40.0),
-          new Positioned(top: 10.0, right: 20.0, child: new Text('1'))
+          new Icon(Icons.panorama_fish_eye,
+              size: 40.0, color: Colors.blueGrey[100]),
+          new Positioned(top: 12.0, left: 16.0, child: new Text('1'))
         ]),
         new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye, size: 40.0),
-          new Positioned(top: 10.0, right: 20.0, child: new Text('1'))
+          new Icon(Icons.panorama_fish_eye,
+              size: 40.0, color: Colors.blueGrey[100]),
+          new Positioned(top: 12.0, left: 16.0, child: new Text('1'))
         ]),
         new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.star_border, size: 50.0),
-          new Positioned(top: 10.0, right: 20.0, child: new Text('1'))
+          new Icon(Icons.star_border, size: 50.0, color: Colors.blueGrey[100]),
+          new Positioned(top: 18.0, left: 22.0, child: new Text('1'))
         ]),
         new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.star_border, size: 50.0),
-          new Positioned(top: 10.0, right: 20.0, child: new Text('1'))
+          new Icon(Icons.star_border, size: 50.0, color: Colors.blueGrey[100]),
+          new Positioned(top: 18.0, left: 22.0, child: new Text('1'))
         ]),
       ])
     ], mainAxisSize: MainAxisSize.min));
