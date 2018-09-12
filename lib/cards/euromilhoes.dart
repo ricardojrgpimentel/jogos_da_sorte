@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
 
 class EuromilhoesCard extends StatelessWidget {
+  EuromilhoesCard({this.numbers, this.stars});
+
+  final numbers;
+  final stars;
+
   @override
   Widget build(BuildContext context) {
     return new Card(
@@ -13,6 +18,9 @@ class EuromilhoesCard extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
+      ),
+      new Center(
+        child: new Text('$numbers / $stars'),
       )
     ], mainAxisSize: MainAxisSize.min));
   }
