@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.green[700],
           ),
           body: new ListView(shrinkWrap: true, children: <Widget>[
-            EuromilhoesCard(numbers: '1-2-3-4-5', stars: '1-2'),
+            EuromilhoesCard(),
             MilhaoCard(),
             PopularCard(),
             ClassicaCard(),
