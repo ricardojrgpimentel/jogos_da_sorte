@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 
 class PopularCard extends StatelessWidget {
+  PopularCard({this.popularNumber});
+
+  final popularNumber;
   @override
   Widget build(BuildContext context) {
     return new Card(
@@ -13,7 +16,13 @@ class PopularCard extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-      )
+      ),
+      new Padding(
+          padding: new EdgeInsets.all(8.0),
+          child: new Text('$popularNumber',
+              textAlign: TextAlign.center,
+              style:
+                  new TextStyle(fontWeight: FontWeight.bold, fontSize: 25.0)))
     ], mainAxisSize: MainAxisSize.min));
   }
 }

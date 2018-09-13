@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 
 class MilhaoCard extends StatelessWidget {
+  MilhaoCard({this.milhaoNumber});
+
+  final milhaoNumber;
+
   @override
   Widget build(BuildContext context) {
     return new Card(
@@ -13,7 +17,13 @@ class MilhaoCard extends StatelessWidget {
             fit: BoxFit.cover,
           ),
         ),
-      )
+      ),
+      new Padding(
+          padding: new EdgeInsets.all(8.0),
+          child: new Text('$milhaoNumber',
+              textAlign: TextAlign.center,
+              style:
+                  new TextStyle(fontWeight: FontWeight.bold, fontSize: 25.0)))
     ], mainAxisSize: MainAxisSize.min));
   }
 }

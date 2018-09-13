@@ -4,7 +4,6 @@ import 'cards/milhao.dart';
 import 'cards/classica.dart';
 import 'cards/popular.dart';
 import 'cards/totoloto.dart';
-import 'cards/totobola.dart';
 
 void main() => runApp(MyApp());
 
@@ -19,12 +18,25 @@ class MyApp extends StatelessWidget {
             backgroundColor: Colors.green[700],
           ),
           body: new ListView(shrinkWrap: true, children: <Widget>[
-            EuromilhoesCard(),
-            MilhaoCard(),
-            PopularCard(),
-            ClassicaCard(),
-            TotolotoCard(),
-            TotobolaCard(),
+            EuromilhoesCard(
+              number1: '1',
+              number2: '2',
+              number3: '3',
+              number4: '4',
+              number5: '5',
+              star1: '1',
+              star2: '2',
+            ),
+            MilhaoCard(milhaoNumber: '12345'),
+            PopularCard(popularNumber: '12345'),
+            ClassicaCard(classicaNumber: '12345'),
+            TotolotoCard(
+                number1: '1',
+                number2: '2',
+                number3: '3',
+                number4: '4',
+                number5: '5',
+                luckNumber: '6'),
           ])),
     );
   }
