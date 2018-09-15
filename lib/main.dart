@@ -4,11 +4,12 @@ import 'cards/milhao.dart';
 import 'cards/classica.dart';
 import 'cards/popular.dart';
 import 'cards/totoloto.dart';
+import './about.dart';
 
-void main() =>
-    runApp(MaterialApp(title: 'Jogos da Sorte', initialRoute: '/', routes: {
-      '/': (context) => MyApp(),
-    }));
+void main() => runApp(MaterialApp(
+    title: 'Jogos da Sorte',
+    initialRoute: '/',
+    routes: {'/': (context) => MyApp(), '/about': (context) => About()}));
 
 class MyApp extends StatelessWidget {
   @override
@@ -38,6 +39,13 @@ class MyApp extends StatelessWidget {
             number4: '4',
             number5: '5',
             luckNumber: '6'),
+        RaisedButton(
+          child: Text('About'),
+          onPressed: () {
+            // Navigate to the second screen using a named route
+            Navigator.pushNamed(context, '/about');
+          },
+        )
       ]),
     );
   }
