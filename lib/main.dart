@@ -6,6 +6,8 @@ import 'cards/popular.dart';
 import 'cards/totoloto.dart';
 import './about.dart';
 import 'utils/sidebar.dart';
+import 'dart:async';
+import 'package:http/http.dart' as http;
 
 void main() => runApp(MaterialApp(
     title: 'Jogos da Sorte',
@@ -13,6 +15,17 @@ void main() => runApp(MaterialApp(
     routes: {'/': (context) => MyApp(), '/about': (context) => About()}));
 
 class MyApp extends StatelessWidget {
+  Future<String> fetchResults() async {
+    final response = await http
+        .get('https://www.jogossantacasa.pt/web/SCRss/rssFeedCartRes');
+
+    if (response.statusCode == 200) {
+      return response.body;
+    } else {
+      throw Exception('Failed to load post');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -41,6 +54,25 @@ class MyApp extends StatelessWidget {
             number4: '4',
             number5: '5',
             luckNumber: '6'),
+        RaisedButton(
+          child: Text('About'),
+          onPressed: () {
+            // Navigate to the second screen using a named route
+            this.fetchResults();
+          },
+        ),
+        FutureBuilder<String>(
+          future: fetchResults(),
+          builder: (context, snapshot) {
+            print('data ${snapshot.hasData}');
+            if (snapshot.hasData) {
+              return Container(child: Text('Data'));
+            } else if (snapshot.hasError) {
+              return Text("${snapshot.error}");
+            }
+            return Container(child: Text('Loading'));
+          },
+        )
       ]),
     );
   }
