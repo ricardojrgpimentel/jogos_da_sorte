@@ -5,6 +5,7 @@ import 'cards/classica.dart';
 import 'cards/popular.dart';
 import 'cards/totoloto.dart';
 import './about.dart';
+import 'utils/sidebar.dart';
 
 void main() => runApp(MaterialApp(
     title: 'Jogos da Sorte',
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         title: Text('Resultados'),
         backgroundColor: Colors.green[700],
       ),
+      drawer: Sidebar(),
       body: new ListView(shrinkWrap: true, children: <Widget>[
         EuromilhoesCard(
           number1: '1',
@@ -39,13 +41,6 @@ class MyApp extends StatelessWidget {
             number4: '4',
             number5: '5',
             luckNumber: '6'),
-        RaisedButton(
-          child: Text('About'),
-          onPressed: () {
-            // Navigate to the second screen using a named route
-            Navigator.pushNamed(context, '/about');
-          },
-        )
       ]),
     );
   }

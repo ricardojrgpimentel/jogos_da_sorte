@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'utils/sidebar.dart';
 
 class About extends StatelessWidget {
   @override
@@ -8,6 +9,7 @@ class About extends StatelessWidget {
         title: Text('Sobre'),
         backgroundColor: Colors.green[700],
       ),
+      drawer: Sidebar(),
       body: Center(
           child: RaisedButton(
         child: Text('Launch screen'),
