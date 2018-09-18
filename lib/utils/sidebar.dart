@@ -7,8 +7,10 @@ class Sidebar extends StatelessWidget {
         child: new ListView(
       children: <Widget>[
         new DrawerHeader(
-          child: new Text('Jogos da Sorte'),
-        ),
+            child: new Text('Jogos da Sorte'),
+            decoration: BoxDecoration(
+              color: Colors.green[700],
+            )),
         new ListTile(
           title: new Text('Resultados'),
           onTap: () {
