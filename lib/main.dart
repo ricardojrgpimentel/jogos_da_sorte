@@ -45,8 +45,15 @@ class MyApp extends StatelessWidget {
           star2: '2',
         ),
         MilhaoCard(milhaoNumber: '12345'),
-        PopularCard(popularNumber: '12345'),
-        ClassicaCard(classicaNumber: '12345'),
+        PopularCard(
+            popularFirst: '12345',
+            popularSecond: '12345',
+            popularThird: '12345',
+            popularForth: '12345'),
+        ClassicaCard(
+            classicaFirst: '12345',
+            classicaSecond: '12345',
+            classicaThird: '12345'),
         TotolotoCard(
             number1: '1',
             number2: '2',
@@ -54,19 +61,11 @@ class MyApp extends StatelessWidget {
             number4: '4',
             number5: '5',
             luckNumber: '6'),
-        RaisedButton(
-          child: Text('About'),
-          onPressed: () {
-            // Navigate to the second screen using a named route
-            this.fetchResults();
-          },
-        ),
         FutureBuilder<String>(
           future: fetchResults(),
           builder: (context, snapshot) {
-            print('data ${snapshot.hasData}');
             if (snapshot.hasData) {
-              return Container(child: Text('Data'));
+              return Container(child: Text('Data ${snapshot}'));
             } else if (snapshot.hasError) {
               return Text("${snapshot.error}");
             }

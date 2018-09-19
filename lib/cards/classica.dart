@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ClassicaCard extends StatelessWidget {
-  ClassicaCard({this.classicaNumber});
+  ClassicaCard({this.classicaFirst, this.classicaSecond, this.classicaThird});
 
-  final classicaNumber;
+  final classicaFirst;
+  final classicaSecond;
+  final classicaThird;
   @override
   Widget build(BuildContext context) {
     return new Card(
@@ -19,10 +21,20 @@ class ClassicaCard extends StatelessWidget {
       ),
       new Padding(
           padding: new EdgeInsets.all(8.0),
-          child: new Text('$classicaNumber',
-              textAlign: TextAlign.center,
-              style:
-                  new TextStyle(fontWeight: FontWeight.bold, fontSize: 25.0)))
+          child: new Column(children: <Widget>[
+            new Text('1º $classicaFirst',
+                textAlign: TextAlign.center,
+                style:
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 25.0)),
+            new Text('2º $classicaSecond',
+                textAlign: TextAlign.center,
+                style:
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 25.0)),
+            new Text('3º $classicaThird',
+                textAlign: TextAlign.center,
+                style:
+                    new TextStyle(fontWeight: FontWeight.bold, fontSize: 25.0)),
+          ]))
     ], mainAxisSize: MainAxisSize.min));
   }
 }
