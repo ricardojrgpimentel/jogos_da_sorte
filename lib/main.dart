@@ -42,6 +42,9 @@ class MyApp extends StatelessWidget {
           builder: (context, snapshot) {
             if (snapshot.hasData) {
               return new ListView(shrinkWrap: true, children: <Widget>[
+                Container(
+                  child: Text('Euromilhões ${snapshot.data.items[0]}'),
+                ),
                 EuromilhoesCard(
                   number1: '1',
                   number2: '2',
@@ -51,16 +54,28 @@ class MyApp extends StatelessWidget {
                   star1: '1',
                   star2: '2',
                 ),
+                Container(
+                  child: Text('M1lhão ${snapshot.data.items[2]}'),
+                ),
                 MilhaoCard(milhaoNumber: '12345'),
+                Container(
+                  child: Text('Popular ${snapshot.data.items[7]}'),
+                ),
                 PopularCard(
                     popularFirst: '12345',
                     popularSecond: '12345',
                     popularThird: '12345',
                     popularForth: '12345'),
+                Container(
+                  child: Text('Clássica ${snapshot.data.items[6]}'),
+                ),
                 ClassicaCard(
                     classicaFirst: '12345',
                     classicaSecond: '12345',
                     classicaThird: '12345'),
+                Container(
+                  child: Text('Totoloto ${snapshot.data.items[3]}'),
+                ),
                 TotolotoCard(
                     number1: '1',
                     number2: '2',
@@ -68,21 +83,6 @@ class MyApp extends StatelessWidget {
                     number4: '4',
                     number5: '5',
                     luckNumber: '6'),
-                Container(
-                  child: Text('Euromilhões ${snapshot.data.items[0]}'),
-                ),
-                Container(
-                  child: Text('M1lhão ${snapshot.data.items[2]}'),
-                ),
-                Container(
-                  child: Text('Totoloto ${snapshot.data.items[3]}'),
-                ),
-                Container(
-                  child: Text('Clássica ${snapshot.data.items[6]}'),
-                ),
-                Container(
-                  child: Text('Popular ${snapshot.data.items[7]}'),
-                ),
               ]);
             } else {
               return new Container(
