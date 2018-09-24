@@ -10,6 +10,18 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:webfeed/webfeed.dart';
 
+/**
+ * Euromilhoes
+ * /\:(.*)/g
+ * M1lhao
+ * 
+ * Popular
+ * 
+ * Classica
+ * 
+ * Totoloto
+ */
+
 void main() => runApp(MaterialApp(
     title: 'Jogos da Sorte',
     initialRoute: '/',
