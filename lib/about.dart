@@ -12,16 +12,22 @@ class About extends StatelessWidget {
         drawer: Sidebar(),
         body: ListView(
           children: <Widget>[
-            Column(
-              children: <Widget>[
-                Text('Desenvolvido por Ricardo Pimentel'),
-                Text('Com base na framework Flutter')
-              ],
-            ),
-            ListTile(
-              leading: Icon(Icons.info_outline),
-              title: Text('Jogos da Sorte'),
-              subtitle: Text('Versão: 1.0'),
+            Card(
+                child: Container(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                children: <Widget>[
+                  Text('Desenvolvido por Ricardo Pimentel'),
+                  Text('Com base na framework Flutter')
+                ],
+              ),
+            )),
+            Card(
+              child: ListTile(
+                leading: Icon(Icons.info_outline),
+                title: Text('Jogos da Sorte'),
+                subtitle: Text('Versão: 1.0'),
+              ),
             )
           ],
         ));

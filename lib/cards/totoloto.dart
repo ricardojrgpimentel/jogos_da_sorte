@@ -83,6 +83,16 @@ class TotolotoCard extends StatelessWidget {
                   style: new TextStyle(
                       fontWeight: FontWeight.bold, fontSize: 25.0))
             ]),
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.grade, size: 40.0, color: Colors.blueGrey[100]),
+              new Text('$luckNumber',
+                  textAlign: TextAlign.center,
+                  style: new TextStyle(
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
       ])
     ], mainAxisSize: MainAxisSize.min));
   }
