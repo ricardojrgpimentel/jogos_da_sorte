@@ -12,14 +12,15 @@ import 'package:webfeed/webfeed.dart';
 
 /**
  * Euromilhoes
- * /\:(.*)/g
+ * /\d{1,2} \d{1,2} \d{1,2} \d{1,2} \d{1,2} \+ \d{1,2} \d{1,2}/g
  * M1lhao
- * 
+ * /\w{3} \d{5}/g
  * Popular
- * 
+ * \d{5}
  * Classica
- * 
+ * \d{5}
  * Totoloto
+ * \d{1,2} \d{1,2} \d{1,2} \d{1,2} \d{1,2} \+ \d{1,2}
  */
 
 void main() => runApp(MaterialApp(
