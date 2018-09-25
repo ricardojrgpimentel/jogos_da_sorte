@@ -32,81 +32,83 @@ class EuromilhoesCard extends StatelessWidget {
         ),
       ),
       new Row(mainAxisAlignment: MainAxisAlignment.center, children: <Widget>[
-        new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye,
-              size: 40.0, color: Colors.blueGrey[100]),
-          new Positioned(
-              top: 6.0,
-              left: 12.0,
-              child: new Text('$number1',
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.panorama_fish_eye,
+                  size: 40.0, color: Colors.blueGrey[100]),
+              new Text('$number1',
                   textAlign: TextAlign.center,
                   style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 25.0)))
-        ]),
-        new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye,
-              size: 40.0, color: Colors.blueGrey[100]),
-          new Positioned(
-              top: 6.0,
-              left: 12.0,
-              child: new Text('$number2',
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.panorama_fish_eye,
+                  size: 40.0, color: Colors.blueGrey[100]),
+              new Text('$number2',
                   textAlign: TextAlign.center,
                   style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 25.0)))
-        ]),
-        new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye,
-              size: 40.0, color: Colors.blueGrey[100]),
-          new Positioned(
-              top: 6.0,
-              left: 12.0,
-              child: new Text('$number3',
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.panorama_fish_eye,
+                  size: 40.0, color: Colors.blueGrey[100]),
+              new Text('$number3',
                   textAlign: TextAlign.center,
                   style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 25.0)))
-        ]),
-        new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye,
-              size: 40.0, color: Colors.blueGrey[100]),
-          new Positioned(
-              top: 6.0,
-              left: 12.0,
-              child: new Text('$number4',
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.panorama_fish_eye,
+                  size: 40.0, color: Colors.blueGrey[100]),
+              new Text('$number4',
                   textAlign: TextAlign.center,
                   style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 25.0)))
-        ]),
-        new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.panorama_fish_eye,
-              size: 40.0, color: Colors.blueGrey[100]),
-          new Positioned(
-              top: 6.0,
-              left: 12.0,
-              child: new Text('$number5',
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.panorama_fish_eye,
+                  size: 40.0, color: Colors.blueGrey[100]),
+              new Text('$number5',
                   textAlign: TextAlign.center,
                   style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 25.0)))
-        ]),
-        new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.star_border, size: 50.0, color: Colors.blueGrey[100]),
-          new Positioned(
-              top: 12.0,
-              left: 18.0,
-              child: new Text('$star1',
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.star_border,
+                  size: 50.0, color: Colors.blueGrey[100]),
+              new Text('$star1',
                   textAlign: TextAlign.center,
                   style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 25.0)))
-        ]),
-        new Stack(overflow: Overflow.visible, children: [
-          new Icon(Icons.star_border, size: 50.0, color: Colors.blueGrey[100]),
-          new Positioned(
-              top: 12.0,
-              left: 18.0,
-              child: new Text('$star2',
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
+        new Stack(
+            overflow: Overflow.visible,
+            alignment: Alignment(0.0, 0.0),
+            children: [
+              new Icon(Icons.star_border,
+                  size: 50.0, color: Colors.blueGrey[100]),
+              new Text('$star2',
                   textAlign: TextAlign.center,
                   style: new TextStyle(
-                      fontWeight: FontWeight.bold, fontSize: 25.0)))
-        ]),
+                      fontWeight: FontWeight.bold, fontSize: 25.0))
+            ]),
       ])
     ], mainAxisSize: MainAxisSize.min));
   }
