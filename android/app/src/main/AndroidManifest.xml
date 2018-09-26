@@ -13,8 +13,8 @@
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
     <application
-        android:name="jogos.da.sorte"
-        android:label="jogos_da_sorte_flutter"
+        android:name="io.flutter.app.FlutterApplication"
+        android:label="Jogos da Sorte"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"

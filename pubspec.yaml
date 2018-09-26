@@ -28,7 +28,7 @@ flutter_icons:
   image_path: "images/icon/icon.png"
   image_path_android: "images/icon/icon.png"
   adaptive_icon_background: "#388e3c"
-  adaptive_icon_foreground: "images/icon/only_logo.png"
+  adaptive_icon_foreground: "images/icon/only_logo2.png"
 # For information on the generic Dart part of this file, see the
 # following page: https://www.dartlang.org/tools/pub/pubspec
 
