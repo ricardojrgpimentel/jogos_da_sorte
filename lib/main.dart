@@ -10,18 +10,18 @@ import 'dart:async';
 import 'package:http/http.dart' as http;
 import 'package:webfeed/webfeed.dart';
 
-/**
- * Euromilhoes
- * /\d{1,2} \d{1,2} \d{1,2} \d{1,2} \d{1,2} \+ \d{1,2} \d{1,2}/g
- * M1lhao
- * /\w{3} \d{5}/g
- * Popular
- * /\d{5}/g
- * Classica
- * /\d{5}/g
- * Totoloto
- * /\d{1,2} \d{1,2} \d{1,2} \d{1,2} \d{1,2} \+ \d{1,2}/g
- */
+///
+/// Euromilhoes
+/// /\d{1,2} \d{1,2} \d{1,2} \d{1,2} \d{1,2} \+ \d{1,2} \d{1,2}/g
+/// M1lhao
+/// /\w{3} \d{5}/g
+/// Popular
+/// /\d{5}/g
+/// Classica
+/// /\d{5}/g
+/// Totoloto
+/// /\d{1,2} \d{1,2} \d{1,2} \d{1,2} \d{1,2} \+ \d{1,2}/g
+///
 
 void main() => runApp(MaterialApp(
     title: 'Jogos da Sorte',
@@ -105,7 +105,7 @@ class MyApp extends StatelessWidget {
                   .stringMatch('${snapshot.data.items[0].description}')
                   .toString();
               Iterable<Match> matchesEuromilhoes =
-                  singleKeyRegExpEuromilhoes.allMatches('${stringEuroMilhoes}');
+                  singleKeyRegExpEuromilhoes.allMatches(stringEuroMilhoes);
               List euromilhoesNumberList = [];
               matchesEuromilhoes.forEach((m) {
                 euromilhoesNumberList.add(m[0]);
@@ -119,7 +119,7 @@ class MyApp extends StatelessWidget {
                   .stringMatch('${snapshot.data.items[3].description}')
                   .toString();
               Iterable<Match> matchesTotoloto =
-                  singleKeyRegExpEuromilhoes.allMatches('${stringTotoloto}');
+                  singleKeyRegExpTotoloto.allMatches(stringTotoloto);
               List totolotoNumberList = [];
               matchesTotoloto.forEach((m) {
                 totolotoNumberList.add(m[0]);

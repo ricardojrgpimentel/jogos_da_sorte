@@ -7,7 +7,10 @@ class Sidebar extends StatelessWidget {
         child: new ListView(
       children: <Widget>[
         new DrawerHeader(
-            child: new Text('Jogos da Sorte'),
+            child: new Image.asset(
+              'images/full_logo.png',
+              height: 20.0,
+            ),
             decoration: BoxDecoration(
               color: Colors.green[700],
             )),
