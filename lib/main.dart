@@ -188,7 +188,12 @@ class MyApp extends StatelessWidget {
               ]);
             } else {
               return new Container(
-                child: Text('loading'),
+                child: Center(
+                    child: new Image.asset(
+                  'images/loading.gif',
+                  height: 60.0,
+                  fit: BoxFit.cover,
+                )),
               );
             }
           },
